@@ -60,6 +60,7 @@ public class IAiAnswerService implements AiAnswerService {
                 .body(json)
                 .execute()
                 .body();
+        log.info("https://api.openai.com/v1/completions的结果 ：{}", result);
         return JSONUtil.toBean(result, CreateCompletionResponse.class);
     }
 
