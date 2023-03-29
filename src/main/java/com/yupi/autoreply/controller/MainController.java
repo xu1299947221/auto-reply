@@ -21,7 +21,6 @@ public class MainController {
     @Autowired
     private AiAnswerService aiAnswerService;
 
-    @RequestBody
     @RequestMapping("/ChatGPT")
     public String ChatGPT(String prompt,String passwd){
         if ("xu1299947221".equals(passwd)){
